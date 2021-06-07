@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script>
+
+
+
+</script>
+
+
+
+
+<h4 class="ui horizontal divider header">
+
+</h4>
+
+
+
+<div class="ui container">
+
+<div class="ui icon input">
+  <input type="text" placeholder="Search...">
+  <i class="search icon"></i>
+</div>
+
+
+<div class="medium ui buttons">
+  <button onClick="window.location.reload()" class="ui button">let us gamble.</button>
+</div>
+
+</div>
+
+
+
+<table class="ui selectable inverted table">
+  <thead>
+    <tr>
+        <th>Symbol</th>
+        <th>Name</th>
+        <th>Logo</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for coin in coins %}
+    <tr>
+      <td data-label="Symbol">{{ coin.symbol }}</td>
+      <td data-label="Name">{{ coin.name }}</td>
+      <td data-label="Logo"><img src={{ coin.logo }} width="30px"></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+</div>
+
+
+
+
+
+{% endblock %}
