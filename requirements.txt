@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+jinja2
+yfinance
+sqlalchemy
+google-cloud-bigquery
+pandas
+python-coinmarketcap
+coinmarketcap
+requests
+python-dotenv
+aiofiles
